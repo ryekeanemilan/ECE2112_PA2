@@ -96,3 +96,13 @@ Just like the last problem, a boolean condition is used again to compare the val
 ```
 above_mean = S[S>S_mean]
 ```
+
+
+Read Me File Version History
+September 1, 2026 - Uploaded the finished `ipynb` file
+
+September 1, 2026 - Uploaded the .npy files into the repository
+
+September 1, 2026 - Started writing the README file
+
+September 2, 2026 - Finished the repository

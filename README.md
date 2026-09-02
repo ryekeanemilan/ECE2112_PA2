@@ -85,3 +85,14 @@ Similar to the previous problem, numbers from 1 to 36 are first generated using 
 S = np.power(np.arange (1,37), 2).reshape(6, 6)
 ```
 
+The next goal is to find the overall average of all the squared numbers in the squared array.
+
+```
+S_mean = np.mean(S)
+```
+
+Just like the last problem, a boolean condition is used again to compare the values and filter the array. `S > S_mean` is placed inside the bracket to allow NumPy to look at every element inside the array and only pull out the ones that are greater than the calculated average. 
+
+```
+above_mean = S[S>S_mean]
+```

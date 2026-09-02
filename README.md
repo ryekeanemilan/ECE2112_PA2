@@ -79,3 +79,9 @@ div_by_4 = C[np.mod(C, 4) == 0]
 # Problem 3: Above-Mean Squares Problem
 Create a 6x6 ndarray named S containing the squares of the first 36 positive integers in increasing row-major order. Compute the mean of all elements of S and store it in S_mean. Then use Boolean filtering to select only the elements strictly greater than S_mean and store these values in above_mean
 
+Similar to the previous problem, numbers from 1 to 36 are first generated using `np.arange`. Where they are then squared simultaneously and organized into a 6x6 grid.
+
+```
+S = np.power(np.arange (1,37), 2).reshape(6, 6)
+```
+

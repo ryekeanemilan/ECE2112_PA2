@@ -21,8 +21,7 @@ std = np.std(X)
 Once the values are ready, the normalization formula is applied. By virtue of how NumPy handles math across arrays, subtracting the mean and dividing by the standard deviation is applied to every single element at once. This avoids the need for any loops in the solution. 
 
 ```
-mean = np.mean(X)
-std = np.std(X)
+X_normalized = (X-mean)/std
 ```
 
 The processed array is then saved as an `.npy` file. 

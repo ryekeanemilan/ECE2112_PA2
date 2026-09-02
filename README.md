@@ -1,4 +1,4 @@
-# ECE2112_PA1
+# ECE2112_PA2
 Milan, Rye Keane Lorenzo | 2ECE-D
 
 # Problem 1: Reproducible Normalization Problem

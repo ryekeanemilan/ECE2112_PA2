@@ -67,6 +67,15 @@ To work around this issue, the condition is placed inside the brackets to allow 
 div_by_4 = C[np.mod(C, 4) == 0]
 ```
 
+```
+ [      8      64     216     512    1000    1728    2744    4096    5832
+    8000   10648   13824   17576   21952   27000   32768   39304   46656
+   54872   64000   74088   85184   97336  110592  125000  140608  157464
+  175616  195112  216000  238328  262144  287496  314432  343000  373248
+  405224  438976  474552  512000  551368  592704  636056  681472  729000
+  778688  830584  884736  941192 1000000]
+```
+
 # Problem 3: Above-Mean Squares Problem
 Create a 6x6 ndarray named S containing the squares of the first 36 positive integers in increasing row-major order. Compute the mean of all elements of S and store it in S_mean. Then use Boolean filtering to select only the elements strictly greater than S_mean and store these values in above_mean
 

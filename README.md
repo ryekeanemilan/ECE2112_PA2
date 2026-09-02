@@ -44,3 +44,29 @@ To hunt down the cubed numbers that are completely divisible by 4, a modulo oper
 ```
 np.mod(C, 4) == 0
 ```
+
+To print out the numbers that have been confirmed to be divisible by 4, a boolean condition is required. However, a boolean condition alone would only print the array where it says true or false, depending on whether the number fulfills the divisible by 4 condition. 
+```
+div_by_4 = np.mod(C, 4) == 0
+```
+```
+ [[False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]
+ [False  True False  True False  True False  True False  True]]
+```
+To work around this issue, the condition is placed inside the brackets to allow NumPy to act like a filter. It searches the entire array and extracts only the numbers that meet the condition; these numbers are then gathered into a new array.
+
+```
+div_by_4 = C[np.mod(C, 4) == 0]
+```
+
+# Problem 3: Above-Mean Squares Problem
+Create a 6x6 ndarray named S containing the squares of the first 36 positive integers in increasing row-major order. Compute the mean of all elements of S and store it in S_mean. Then use Boolean filtering to select only the elements strictly greater than S_mean and store these values in above_mean
+
